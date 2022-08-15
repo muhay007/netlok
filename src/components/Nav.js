@@ -11,7 +11,7 @@ function Nav() {
 
   return (
     <>
-      <div className="flex items-center justify-between py-4 px-6 fixed top-0 z-30 w-full text-white">
+      <div className="flex flex-col md:flex-row items-center justify-between py-4 px-6 fixed top-0 z-30 w-full text-white gap-4">
         <Link to={"/"}>
           <h1 className="text-4xl font-bold italic">
             <span className="text-red-700">NET</span>LOK
