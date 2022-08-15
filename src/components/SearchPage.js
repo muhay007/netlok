@@ -26,16 +26,16 @@ function SearchPage() {
   return (
     <>
       <div className="max-w-screen-lg mx-auto">
-        <div className="py-20">
+        <div className="mt-44">
           <h1 className="text-4xl text-white font-bold text-center my-4">
             Results of <span className="text-indigo-600">{query}</span>
           </h1>
-          <div className="columns-3 w-full gap-4 space-y-4 p-4">
+          <div className="md:columns-3 col-2 w-full gap-4 md:space-y-4 space-y-8 md:p-4 p-12">
             {movies?.map((index, key) => (
               <div className="break-inside-avoid" key={key}>
                 <Link to={`/details/${key}`} state={{ data: index }}>
                   <img
-                    className="rounded-2xl hover:brightness-50 hover:scale-105 ease-linear duration-200"
+                    className="rounded-2xl hover:brightness-50 hover:scale-105 ease-linear duration-200 md:w-auto w-full"
                     src={`https://image.tmdb.org/t/p/w500/${index?.backdrop_path}`}
                     alt={index?.title}
                     onError={(e) => (e.target.style.display = "none")}
