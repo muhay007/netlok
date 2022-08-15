@@ -32,7 +32,7 @@ function Mount() {
   }, [fetchUrl1, data?.id, fetchUrl2]);
 
   return (
-    <div className="flex items-center flex-col mt-32 text-white max-w-screen-lg mx-auto">
+    <div className="flex items-center flex-col mt-44 text-white max-w-screen-lg mx-auto">
       <button
         onClick={() => navigate(-1)}
         className=" text-sm px-4 py-2 rounded-sm bg-gray-800 hover:bg-gray-700"
@@ -47,17 +47,6 @@ function Mount() {
             alt={data?.title}
             onError={(e) => (e.target.style.display = "none")}
           />
-          {/* <video
-            className="rounded-2xl absolute top-0 left-0 w-full h-full duration-200 ease-linear"
-            controls
-          >
-            <source
-              src={`https://www.youtube.com/embed/${trailer}`}
-              type="video/mp4"
-            />
-            Your browser does not support this video format.
-          </video> */}
-
           <iframe
             className="rounded-2xl absolute top-0 left-0 w-full h-full duration-200 ease-linear opacity-0 hover:opacity-100"
             src={`https://www.youtube.com/embed/${trailer}`}
