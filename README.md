@@ -3,6 +3,5 @@
 
 
 
-made by: lthrsdnto 
-check out my portfolio
->> lutz.vercel.app <<
+made by: lthrsdnto
+lutz.vercel.app
